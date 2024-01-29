@@ -1,6 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
+  "homepage": "https://james-gates-0212.github.io/react-gh-pages",
   "private": true,
   "dependencies": {
     "@babel/core": "^7.0.0-0",
@@ -32,8 +33,10 @@
     "webpack": "^5.0.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    "build": "react-scripts build && sw-precache-cra --config sw-config.js",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -66,6 +69,7 @@
     "@icongo/sn": "^1.2.0",
     "@icongo/sti": "^1.2.0",
     "@icongo/vl": "^1.2.0",
+    "gh-pages": "^6.1.1",
     "sw-precache-cra": "^1.0.0"
   }
 }
