@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "homepage": "https://james-gates-0212.github.io/portfolio",
   "private": true,
+  "type": "module",
   "dependencies": {
     "@babel/core": "^7.0.0-0",
     "@babel/plugin-syntax-flow": "^7.14.5",
@@ -33,12 +34,13 @@
     "webpack": "^5.0.0"
   },
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "npm run sitemap && npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "sitemap": "node ./sitemap-generator.js"
   },
   "eslintConfig": {
     "extends": [
@@ -70,6 +72,6 @@
     "@icongo/sti": "^1.2.0",
     "@icongo/vl": "^1.2.0",
     "gh-pages": "^6.1.1",
-    "sw-precache-cra": "^1.0.0"
+    "sitemap": "^7.1.1"
   }
 }
