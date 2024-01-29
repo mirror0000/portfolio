@@ -27,12 +27,12 @@ function App() {
   }, []);
 
   return (
-    <Router>
+    <Router basename={isProductionMode ? '/portfolio' : '/'}>
       <Preloader load={load} />
       <div className="App" id={load ? 'no-scroll' : 'scroll'}>
         <Navbar />
         <ScrollToTop />
-        <Routes basename={isProductionMode ? '/portfolio' : '/'}>
+        <Routes>
           {MainRoutes.map(({ route, element }, idx) => (
             <Route key={`route-${idx}`} path={route} element={element} />
           ))}
