@@ -2,11 +2,13 @@
 
 Portfolio with React.js
 
-## Environments
+## Instructions for environment & development
+
+### Environments
 
 - Node.js
 
-## Install yarn
+### Install yarn
 
 Open command prompt and type the command as follows.
 
@@ -14,13 +16,29 @@ Open command prompt and type the command as follows.
 npm install --global yarn
 ```
 
-## Run as Development mode
+### Install NPM Packages
+
+Install NPM Packages for this project. Open Command Prompt on this project directory. And then run the following command.
+
+```bash
+yarn
+```
+
+## Development
+
+### Run as Development mode
 
 ```bash
 npm start
 ```
 
-## Run as Production mode
+### Deploy on Github pages
+
+```bash
+./deploy.github.pages.sh
+```
+
+### Run as Production mode
 
 Install `serve` npm. Please, should use only once. Because it's only for serving built files.
 
