@@ -5,7 +5,7 @@ import { VLSkype } from '@icongo/vl';
 
 export const LinkInfos = [
   {
-    href: 'mailto:james.gates.0212@gmail.com',
+    href: 'mailto:miroslavpesic111@gmail.com',
     icon: {
       dark: LGGoogleGmail,
       light: LGGoogleGmail,
@@ -21,7 +21,7 @@ export const LinkInfos = [
     label: 'Outlook',
   },
   {
-    href: 'https://join.skype.com/invite/cNobIuz9Vg5u',
+    href: 'live:.cid.e360fafc9c6a0e22',
     icon: {
       dark: VLSkype,
       light: VLSkype,
@@ -29,7 +29,7 @@ export const LinkInfos = [
     label: 'Skype',
   },
   {
-    href: 'https://github.com/james-gates-0212',
+    href: 'https://github.com/JunioDo',
     icon: {
       dark: LGGithubIcon,
       light: ICPGithubIconWhite,

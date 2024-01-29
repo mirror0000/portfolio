@@ -26,7 +26,7 @@ export default function NavBar() {
     <Navbar expanded={expand} fixed="top" expand="md" className={navColour ? 'sticky' : 'navbar'}>
       <Container>
         <Navbar.Brand as={Link} to={'/'} className="d-flex white">
-          James Gates
+          Miroslav Pesic
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"

@@ -2,7 +2,7 @@ const { createWriteStream } = require('fs');
 const { SitemapStream } = require('sitemap');
 
 // Creates a sitemap object given the input configuration with URLs
-const sitemap = new SitemapStream({ hostname: 'https://james-gates-0212.github.io/' });
+const sitemap = new SitemapStream({ hostname: 'https://JunioDo.github.io/' });
 
 const writeStream = createWriteStream('./public/sitemap.xml');
 sitemap.pipe(writeStream);

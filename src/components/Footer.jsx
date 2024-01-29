@@ -9,7 +9,7 @@ export default function Footer() {
     <Container fluid className="footer">
       <Row>
         <Col md="6" className="footer-copywright">
-          <h3>Copyright &copy; {year} James Gates</h3>
+          <h3>Copyright &copy; {year} Miroslav Pesic</h3>
         </Col>
         <Col md="6" className="footer-body">
           <ul className="footer-icons">

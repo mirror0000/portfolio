@@ -22,7 +22,7 @@ export const MainRoutes = [
   },
   {
     className: 'fork-btn-inner',
-    href: 'https://github.com/james-gates-0212',
+    href: 'https://github.com/JunioDo',
     icon: () => (
       <>
         <CgGitFork style={{ fontSize: '1.2em' }} /> <AiFillStar style={{ fontSize: '1.1em' }} />
