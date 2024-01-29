@@ -10,6 +10,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Tooltip } from 'react-tooltip';
 import { MainRoutes } from './infos/MainRoutes';
 
+const isDevelopmentMode = process.env.NODE_ENV === 'development';
+const isProductionMode = process.env.NODE_ENV === 'production';
+
 function App() {
   const [load, upadateLoad] = useState(true);
 
@@ -17,6 +20,8 @@ function App() {
     const timer = setTimeout(() => {
       upadateLoad(false);
     }, 1200);
+
+    console.log('development', isDevelopmentMode);
 
     return () => clearTimeout(timer);
   }, []);
@@ -27,7 +32,7 @@ function App() {
       <div className="App" id={load ? 'no-scroll' : 'scroll'}>
         <Navbar />
         <ScrollToTop />
-        <Routes>
+        <Routes basename={isProductionMode ? '/portfolio' : '/'}>
           {MainRoutes.map(({ route, element }, idx) => (
             <Route key={`route-${idx}`} path={route} element={element} />
           ))}
