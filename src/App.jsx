@@ -21,7 +21,9 @@ function App() {
       upadateLoad(false);
     }, 1200);
 
-    console.log('development', isDevelopmentMode);
+    if (isDevelopmentMode) {
+      console.log('development', isDevelopmentMode);
+    }
 
     return () => clearTimeout(timer);
   }, []);

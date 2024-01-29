@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "homepage": "https://james-gates-0212.github.io/portfolio",
   "private": true,
-  "type": "module",
   "dependencies": {
     "@babel/core": "^7.0.0-0",
     "@babel/plugin-syntax-flow": "^7.14.5",
