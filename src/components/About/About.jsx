@@ -45,11 +45,7 @@ export default function About() {
             }}
             className="about-img"
           >
-            <img
-              src={laptopImg}
-              alt="about"
-              className="img-fluid"
-            />
+            <img src={laptopImg} alt="about" className="img-fluid" />
           </Col>
         </Row>
 
@@ -69,16 +65,11 @@ export default function About() {
           }}
         >
           <p>
-            For many aspects, such as Requirement Analysis,
-            Architect Design, Database Modeling,
-            Front-end/Back-end Coding and Maintenance, I
-            support reliable and qualified service.
+            For many aspects, such as Requirement Analysis, Architect Design, Database Modeling, Front-end/Back-end
+            Coding and Maintenance, I support reliable and qualified service.
           </p>
           <ul>
-            <li>
-              Fast Progress, Best Quality and Constant
-              Report
-            </li>
+            <li>Fast Progress, Best Quality and Constant Report</li>
             <li>Cooperative Idea Support and so on</li>
           </ul>
         </div>

@@ -13,13 +13,7 @@ import {
 } from '@icongo/lg';
 import { SIMui } from '@icongo/si';
 import { SKAwsDark, SKGithubLight } from '@icongo/sk';
-import {
-  STICss3,
-  STIJava,
-  STIJavascript,
-  STIPhp,
-  STITypescript,
-} from '@icongo/sti';
+import { STICss3, STIJava, STIJavascript, STIPhp, STITypescript } from '@icongo/sti';
 import {
   VLExpressjs,
   VLFirebase,

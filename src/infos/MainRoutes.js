@@ -25,8 +25,7 @@ export const MainRoutes = [
     href: 'https://github.com/james-gates-0212',
     icon: () => (
       <>
-        <CgGitFork style={{ fontSize: '1.2em' }} />{' '}
-        <AiFillStar style={{ fontSize: '1.1em' }} />
+        <CgGitFork style={{ fontSize: '1.2em' }} /> <AiFillStar style={{ fontSize: '1.1em' }} />
       </>
     ),
     target: '_blank',

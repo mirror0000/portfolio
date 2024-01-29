@@ -596,9 +596,7 @@ body {
   position: relative !important;
   padding-top: 110px !important;
   padding-bottom: 30px !important;
-  background-image: var(
-    --section-background-color
-  ) !important;
+  background-image: var(--section-background-color) !important;
   color: white !important;
 }
 
@@ -775,17 +773,13 @@ body {
   color: var(--bs-gray-400);
 }
 
-.vertical-timeline
-  .vertical-timeline-element--work
-  .vertical-timeline-element-content {
+.vertical-timeline .vertical-timeline-element--work .vertical-timeline-element-content {
   --webkit-box-shadow: 0 -3px 0 rgba(255, 255, 255, 0.8);
   box-shadow: 0 -3px 0 rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(2px) !important;
 }
 
-.vertical-timeline
-  .vertical-timeline-element--education
-  .vertical-timeline-element-content {
+.vertical-timeline .vertical-timeline-element--education .vertical-timeline-element-content {
   --webkit-box-shadow: 0 3px 0 rgba(255, 255, 255, 0.8);
   box-shadow: 0 3px 0 rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(2px) !important;

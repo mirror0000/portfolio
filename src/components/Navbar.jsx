@@ -23,12 +23,7 @@ export default function NavBar() {
   window.addEventListener('scroll', scrollHandler);
 
   return (
-    <Navbar
-      expanded={expand}
-      fixed="top"
-      expand="md"
-      className={navColour ? 'sticky' : 'navbar'}
-    >
+    <Navbar expanded={expand} fixed="top" expand="md" className={navColour ? 'sticky' : 'navbar'}>
       <Container>
         <Navbar.Brand href="/" className="d-flex white">
           James Gates
@@ -45,57 +40,26 @@ export default function NavBar() {
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
-            {MainRoutes.map(
-              (
-                {
-                  className,
-                  href,
-                  icon: Icon,
-                  label,
-                  rel,
-                  route,
-                  target,
-                },
-                idx,
-              ) => (
-                <Nav.Item
-                  key={`nav-item-${idx}`}
-                  className={
-                    route === pathname
-                      ? 'active'
-                      : className && 'fork-btn'
-                  }
-                >
-                  {className ? (
-                    <Button
-                      className={className}
-                      href={href}
-                      target={target}
-                    >
-                      <Icon />
-                    </Button>
-                  ) : (
-                    <Nav.Link
-                      as={Link}
-                      href={href}
-                      onClick={() =>
-                        route && updateExpanded(false)
-                      }
-                      rel={rel}
-                      target={target}
-                      to={route}
-                    >
-                      {Icon && (
-                        <Icon
-                          style={{ marginBottom: '2px' }}
-                        />
-                      )}{' '}
-                      {label}
-                    </Nav.Link>
-                  )}
-                </Nav.Item>
-              ),
-            )}
+            {MainRoutes.map(({ className, href, icon: Icon, label, rel, route, target }, idx) => (
+              <Nav.Item key={`nav-item-${idx}`} className={route === pathname ? 'active' : className && 'fork-btn'}>
+                {className ? (
+                  <Button className={className} href={href} target={target}>
+                    <Icon />
+                  </Button>
+                ) : (
+                  <Nav.Link
+                    as={Link}
+                    href={href}
+                    onClick={() => route && updateExpanded(false)}
+                    rel={rel}
+                    target={target}
+                    to={route}
+                  >
+                    {Icon && <Icon style={{ marginBottom: '2px' }} />} {label}
+                  </Nav.Link>
+                )}
+              </Nav.Item>
+            ))}
           </Nav>
         </Navbar.Collapse>
       </Container>

@@ -6,44 +6,28 @@ import { LinkInfos } from '../../infos/Links';
 
 export default function Introduce() {
   return (
-    <Container
-      fluid
-      className="home-about-section"
-      id="about"
-    >
+    <Container fluid className="home-about-section" id="about">
       <Container>
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: '2.6em' }}>
-              LET ME{' '}
-              <span className="purple"> INTRODUCE </span>{' '}
-              MYSELF
+              LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              A Passionate Full Stack Developer with 5+
-              years of experience in blending the art of
-              design with skill of programming to maintain
-              and optimize for performance of website.
+              A Passionate Full Stack Developer with 5+ years of experience in blending the art of design with skill of
+              programming to maintain and optimize for performance of website.
               <br />
               <br />
-              I was very interested in Web Application
-              during my university period and the Library
-              &amp; Information Science made me as a Full
-              Stack Developer. Web Application Development
-              is not only my job, but also my life.
+              I was very interested in Web Application during my university period and the Library &amp; Information
+              Science made me as a Full Stack Developer. Web Application Development is not only my job, but also my
+              life.
               <br />
-              <br />I can work full time, 8+ hours a day, 6
-              days a week. I hope to work with you in a long
-              time.
+              <br />I can work full time, 8+ hours a day, 6 days a week. I hope to work with you in a long time.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img
-                src={myImg}
-                className="img-fluid"
-                alt="avatar"
-              />
+              <img src={myImg} className="img-fluid" alt="avatar" />
             </Tilt>
           </Col>
         </Row>
@@ -51,32 +35,22 @@ export default function Introduce() {
           <Col md={12} className="home-about-social">
             <h1>FIND ME ON</h1>
             <p>
-              Feel free to{' '}
-              <span className="purple">connect </span>with
-              me
+              Feel free to <span className="purple">connect </span>with me
             </p>
             <ul className="home-about-social-links">
-              {LinkInfos.map(
-                (
-                  { href, icon: { dark: DarkIcon }, label },
-                  idx,
-                ) => (
-                  <li
-                    className="social-icons"
-                    key={`intro-social-icon-${idx}`}
+              {LinkInfos.map(({ href, icon: { dark: DarkIcon }, label }, idx) => (
+                <li className="social-icons" key={`intro-social-icon-${idx}`}>
+                  <a
+                    className="icon-colour home-social-icons title-tooltip"
+                    data-tooltip-content={label}
+                    href={href}
+                    target="_blank"
+                    rel="noreferrer"
                   >
-                    <a
-                      className="icon-colour home-social-icons title-tooltip"
-                      data-tooltip-content={label}
-                      href={href}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <DarkIcon />
-                    </a>
-                  </li>
-                ),
-              )}
+                    <DarkIcon />
+                  </a>
+                </li>
+              ))}
             </ul>
           </Col>
         </Row>

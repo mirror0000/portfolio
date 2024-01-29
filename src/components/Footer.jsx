@@ -13,27 +13,19 @@ export default function Footer() {
         </Col>
         <Col md="6" className="footer-body">
           <ul className="footer-icons">
-            {LinkInfos.map(
-              (
-                { href, icon: { light: LightIcon }, label },
-                idx,
-              ) => (
-                <li
-                  className="social-icons"
-                  key={`foot-social-icon-${idx}`}
+            {LinkInfos.map(({ href, icon: { light: LightIcon }, label }, idx) => (
+              <li className="social-icons" key={`foot-social-icon-${idx}`}>
+                <a
+                  className="title-tooltip"
+                  data-tooltip-content={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <a
-                    className="title-tooltip"
-                    data-tooltip-content={label}
-                    href={href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <LightIcon />
-                  </a>
-                </li>
-              ),
-            )}
+                  <LightIcon />
+                </a>
+              </li>
+            ))}
           </ul>
         </Col>
       </Row>

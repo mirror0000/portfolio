@@ -1,12 +1,7 @@
 import { FCBriefcase } from '@icongo/fc';
 import { ICIconEducation } from '@icongo/ic';
 
-function VerticalTimelineElementData({
-  since,
-  until,
-  icon,
-  ...props
-}) {
+function VerticalTimelineElementData({ since, until, icon, ...props }) {
   return {
     elementProps: {
       date: [since, until].filter(Boolean).join(' - '),
@@ -34,14 +29,9 @@ export const Experiences = [
     until: '2013.3',
     title: 'Bachelor in Computer Science',
     company: 'Kyoto University',
-    address:
-      'Yoshidahonmachi, Sakyo Ward, Kyoto, 606-8501, Japan',
+    address: 'Yoshidahonmachi, Sakyo Ward, Kyoto, 606-8501, Japan',
     site: 'https://www.kyoto-u.ac.jp/en',
-    details: [
-      'Computer Science',
-      'Computer Graphics',
-      'Web Programming',
-    ],
+    details: ['Computer Science', 'Computer Graphics', 'Web Programming'],
   }),
   VerticalTimelineElementData({
     type: 'education',
@@ -52,11 +42,7 @@ export const Experiences = [
     company: 'The University of Hong Kong',
     address: 'Pok Fu Lam, Hong Kong',
     site: 'https://www.hku.hk',
-    details: [
-      'Data Analysis',
-      'Database Management System',
-      'Information Retrieval System',
-    ],
+    details: ['Data Analysis', 'Database Management System', 'Information Retrieval System'],
   }),
   VerticalTimelineElementData({
     type: 'work',
@@ -96,8 +82,7 @@ export const Experiences = [
     until: '2023.3',
     title: 'MERN Stack Developer',
     company: 'InterCode',
-    address:
-      '69a, Bohdan Khmelnytskyi str. Chernivtsi, Ukraine',
+    address: '69a, Bohdan Khmelnytskyi str. Chernivtsi, Ukraine',
     site: 'https://intercode.com',
     details: [
       'Various projects and bug fixes on the front and back ends, using React, Express, and MongoDB.',
@@ -105,7 +90,4 @@ export const Experiences = [
       'Designed and developed a Canvas app for purchase request initiations and approvals.',
     ],
   }),
-].sort(
-  ({ since: as, until: au }, { since: bs, until: bu }) =>
-    as < bs || au < bu ? 1 : -1,
-);
+].sort(({ since: as, until: au }, { since: bs, until: bu }) => (as < bs || au < bu ? 1 : -1));
