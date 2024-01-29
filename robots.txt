@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://JunioDo.github.io/portfolio/sitemap.xml
