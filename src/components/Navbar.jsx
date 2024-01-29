@@ -25,7 +25,7 @@ export default function NavBar() {
   return (
     <Navbar expanded={expand} fixed="top" expand="md" className={navColour ? 'sticky' : 'navbar'}>
       <Container>
-        <Navbar.Brand href="/" className="d-flex white">
+        <Navbar.Brand as={Link} to={'/'} className="d-flex white">
           James Gates
         </Navbar.Brand>
         <Navbar.Toggle
